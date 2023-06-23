@@ -1,0 +1,5 @@
+1. php artisan make:observer
+2. provide the observer name
+3. provide the model for observer
+4. register the observer in Provider > EvenetServiceProvider's boot method like this
+   Post::observe(PostObserver::class);
